@@ -81,7 +81,7 @@ window.addEventListener('DOMContentLoaded', function() {
     event.preventDefault()
     
     let serviceType = event.target.innerHTML
-    console.log(`${serviceTypeButton} clicked`)
+    console.log(`${serviceType} clicked`)
 
     let response = await fetch(`https://kiei451.com/api/rides.json`)
     let json = await response.json()
